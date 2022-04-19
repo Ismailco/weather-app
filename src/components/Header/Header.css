@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.current-tab {
+  font-size: 20px;
+  color: #ffe7ee;
+}
+
+.fa-icon {
+  font-size: 25px;
+  color: #ffe7ee;
+  background-color: transparent;
+  margin: 5px 10px;
+}
+
+.nav {
+  display: flex;
+}
+
+.search-input {
+  color: #ffe7ee;
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  background-image: url(../../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 25px;
+  opacity: 1;
+  background-color: transparent;
+  width: 30px;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.search-input:valid,
+.search-input:focus {
+  border: 2px solid #ffe7ee;
+  width: 200px;
+  margin-left: -170px;
+  cursor: text;
+}
