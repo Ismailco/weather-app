@@ -4,11 +4,16 @@ import './City.css';
 
 function City({ city }) {
   return (
-    <div>
-      <p>{city.title}</p>
-      <p>{city.type}</p>
-      <p>{city.woeid}</p>
-      <p>{city.latt_long}</p>
+    <div className="city">
+      <div className="city-img">
+        <img className="city-state" src="https://www.metaweather.com/static/img/weather/s.svg" alt={city.title} />
+      </div>
+      <h2 className="city-name">{city.title}</h2>
+      <p className="city-type">{city.type}</p>
+      <p className="gps-cord">
+        GPS:
+        {city.latt_long}
+      </p>
     </div>
   );
 }

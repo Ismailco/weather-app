@@ -1,0 +1,46 @@
+.city {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 40vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.city:nth-child(1) {
+  width: 90%;
+}
+
+.city:nth-child(1) .city-state {
+  left: -500px;
+  top: 40px;
+  width: 210px;
+}
+
+.city:nth-of-type(1) .city-name {
+    font-size: 30px;
+}
+
+.city:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.city-state {
+  position: relative;
+  top: -40px;
+  left: -100px;
+  width: 130px;
+}
+
+.city-name {
+  font-size: 20px;
+}
+
+.city-type {
+  font-size: 15px;
+}
+
+.gps-cord {
+  font-size: 10px;
+}

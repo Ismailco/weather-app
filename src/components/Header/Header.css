@@ -19,6 +19,8 @@
 
 .nav {
   display: flex;
+  justify-content: flex-end;
+  width: 0px;
 }
 
 .search-input {
@@ -37,6 +39,7 @@
   outline: none;
   border-radius: 100px;
   cursor: pointer;
+  transition: width 200ms ease-in-out;
 }
 
 .search-input:valid,
