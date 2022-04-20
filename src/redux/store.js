@@ -1,11 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import reducer from './city/city';
+import cityReducer from './city/city';
+// import infoReducer from './info/info';
 
 const root = combineReducers({
-  citys: reducer,
+  city: cityReducer,
 });
 const store = createStore(root, applyMiddleware(logger, thunk));
-store.dispatch(reducer);
+store.dispatch(cityReducer);
 export default store;
