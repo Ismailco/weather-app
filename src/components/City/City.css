@@ -19,9 +19,19 @@
   width: 89%;
 }
 
+.city-state {
+  margin-bottom: 80px;
+  align-self: flex-start;
+  width: 130px;
+}
+
 .city:nth-child(1) .city-state {
   margin-bottom: 2px;
   width: 210px;
+}
+
+.city-name {
+  font-size: 20px;
 }
 
 .city:nth-of-type(1) .city-name {
@@ -30,16 +40,6 @@
 
 .city:nth-child(2n) {
   background-color: rgba(255, 255, 255, 0.2);
-}
-
-.city-state {
-  margin-bottom: 80px;
-  align-self: flex-start;
-  width: 130px;
-}
-
-.city-name {
-  font-size: 20px;
 }
 
 .city-type {

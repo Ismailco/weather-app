@@ -20,7 +20,7 @@
 .nav {
   display: flex;
   justify-content: flex-end;
-  width: 0px;
+  width: 1px;
 }
 
 .search-input {
