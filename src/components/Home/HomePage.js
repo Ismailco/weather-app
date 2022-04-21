@@ -1,3 +1,5 @@
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { dispatchGetData } from '../../redux/city/city';
@@ -16,10 +18,13 @@ function HomePage() {
 
   return (
     <div>
-      {city.length === 0 && <h2 className="empty-list">The is no Weather Data for now!</h2>}
+      {city.length === 0 && (
+        <div className="loading-wraper">
+          <FontAwesomeIcon className="loading" icon={faSpinner} />
+        </div>
+      )}
       {city.length > 0 && (
         <div>
-          {/* <h2>Weather in: {}</h2> */}
           <section className="city-unit">
             {city.map((city) => (
               <City city={city} weather={city.consolidated_weather} key={city.woeid} />

@@ -17,6 +17,14 @@ function Header() {
     }
   };
 
+  const handleClolor = () => {
+    if (document.body.style.backgroundColor === 'rgb(67, 105, 178)') {
+      document.body.style.backgroundColor = 'rgb(235, 76, 137)';
+    } else {
+      document.body.style.backgroundColor = 'rgb(67, 105, 178)';
+    }
+  };
+
   return (
     <div className="header">
       <div className="home">
@@ -30,9 +38,9 @@ function Header() {
       <p className="current-tab">Global Forecast</p>
       <div className="nav">
         <input className="search-input" type="text" required onKeyPress={(e) => onKeyPress(e)} />
-        <a href="/">
+        <button type="button" className="header-btn" onClick={() => handleClolor()}>
           <FontAwesomeIcon className="fa-icon" icon={faGear} />
-        </a>
+        </button>
       </div>
     </div>
   );

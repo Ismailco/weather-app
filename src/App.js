@@ -8,8 +8,6 @@ import HomePage from './components/Home/HomePage';
 import CityPage from './components/CityPage/CityPage';
 
 function App() {
-  // const city = useSelector((state) => state.city);
-
   return (
     <BrowserRouter className="App">
       <Provider store={store}>

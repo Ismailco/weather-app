@@ -9,9 +9,9 @@ function Footer() {
         <span className="hearts">&hearts;</span>
         and
         <span className="coffee">&#x2615;</span>
-        in Morocco
+        in Morocco,
         <br />
-        This App under GPL-3 License,
+        This App under GPL-3 License.
       </p>
     </div>
   );
