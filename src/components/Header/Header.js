@@ -23,7 +23,6 @@ function Header() {
     } else {
       document.body.style.backgroundColor = 'rgb(67, 105, 178)';
     }
-    console.log(document.body.style.backgroundColor);
   };
 
   return (
