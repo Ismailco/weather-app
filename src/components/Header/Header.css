@@ -2,12 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 .current-tab {
   font-size: 20px;
   color: #ffe7ee;
+}
+
+.header-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .fa-icon {
