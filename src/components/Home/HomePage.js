@@ -7,10 +7,11 @@ import './HomePage.css';
 function HomePage() {
   const city = useSelector((state) => state.city);
   const dispatch = useDispatch();
+
   useEffect(() => {
-    // if (city.length === 0) {
-    dispatch(dispatchGetData('ma'));
-    // }
+    if (city.length === 0) {
+      dispatch(dispatchGetData('ma'));
+    }
   }, []);
 
   return (
@@ -21,7 +22,7 @@ function HomePage() {
           {/* <h2>Weather in: {}</h2> */}
           <section className="city-unit">
             {city.map((city) => (
-              <City city={city} key={city.woeid} />
+              <City city={city} weather={city.consolidated_weather} key={city.woeid} />
             ))}
           </section>
         </div>

@@ -1,10 +1,15 @@
 const GET_DATA = 'weatherApp/city/GET_DATA';
+const REMOVE_DATA = 'weatherApp/city/REMOVE_DATA';
 
 export const getData = (citys) => ({
   type: GET_DATA,
   payload: {
     citys,
   },
+});
+
+export const removeData = () => ({
+  type: REMOVE_DATA,
 });
 
 export const getCityInfo = async (id) => {
@@ -33,16 +38,11 @@ export const dispatchGetData = (city) => async (dispatch) => {
         woeid: city.woeid,
         latt_long: city.latt_long,
       }));
-      dispatch(getData(result));
+      // dispatch(getData(result));
       return result;
     })
     .then((res) => {
-      const list = res.map((city) => getCityInfo(city.woeid).then((city) => city));
-      return list;
-    })
-    .then((cityList) => {
-      console.log(cityList);
-      // dispatch(getData(cityList));
+      res.forEach((city) => getCityInfo(city.woeid).then((city) => dispatch(getData(city))));
     })
     .catch((e) => {
       throw new Error(e);
@@ -52,7 +52,9 @@ export const dispatchGetData = (city) => async (dispatch) => {
 const reducer = (state = [], action = {}) => {
   switch (action.type) {
     case GET_DATA:
-      return action.payload.citys;
+      return state.concat({ ...action.payload.citys });
+    case REMOVE_DATA:
+      return [];
     default:
       return state;
   }
