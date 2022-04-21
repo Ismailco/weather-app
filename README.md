@@ -4,7 +4,7 @@
 
 > A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.
 
-![](./src/screencast.gif)
+![](./src/images/screencast.gif)
 
 ## Build with
 
