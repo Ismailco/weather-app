@@ -1,8 +1,8 @@
 import { faTemperatureArrowDown, faTemperatureArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import moment from 'moment';
 import Day from './Day';
 import './CityPage.css';
@@ -11,6 +11,13 @@ function CityPage() {
   const { woeid } = useParams();
   const cityList = useSelector((state) => state.city);
   const city = cityList.filter((city) => city.woeid === Number(woeid));
+
+  // App the name of the city to the tab Title
+  const loc = useLocation();
+  const currLocation = loc.pathname.split('/')[3];
+  useEffect(() => {
+    document.title = `Weather App | ${currLocation[0]}${currLocation.slice(1)}`;
+  }, [currLocation]);
 
   return (
     <div className="city-page">
