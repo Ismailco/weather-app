@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 .current-tab {
@@ -10,8 +10,17 @@
   color: #ffe7ee;
 }
 
+.header-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
 .fa-icon {
   font-size: 25px;
+  font-weight: 700;
   color: #ffe7ee;
   background-color: transparent;
   margin: 5px 10px;
