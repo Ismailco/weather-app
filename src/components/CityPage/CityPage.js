@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import moment from 'moment';
 import Day from './Day';
 import './CityPage.css';
 
@@ -24,7 +25,7 @@ function CityPage() {
         <section className="c-today-weather">
           <h2 className="c-city-name">{city[0].title}</h2>
           <section className="c-time-zone">
-            <p className="c-time">{city[0].time}</p>
+            <p className="c-time">{moment(city[0].time).format('ddd, Do, h:mm A')}</p>
             <p className="c-timezone">{city[0].timezone_name}</p>
           </section>
           <section className="c-temps">

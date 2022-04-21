@@ -41,6 +41,10 @@
   align-items: center;
 }
 
+.c-time {
+    margin-right: 10px;
+}
+
 .c-temp {
   font-size: 30px;
   align-self: flex-end;
