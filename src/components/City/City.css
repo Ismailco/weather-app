@@ -38,8 +38,12 @@
   font-size: 30px;
 }
 
+.city:nth-child(1n) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .city:nth-child(2n) {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .city-type {

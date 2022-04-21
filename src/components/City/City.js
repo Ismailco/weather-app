@@ -5,7 +5,7 @@ import './City.css';
 
 function City({ city, weather }) {
   return (
-    <Link to={`/${city.title}`} className="city">
+    <Link to={`/city/${city.woeid}/${city.title}`} className="city">
       <img key={city.woeid} className="city-state" src={`https://www.metaweather.com/static/img/weather/${weather[0].weather_state_abbr}.svg`} alt={city.title} />
       <h2 className="city-name">{city.title}</h2>
       <p className="city-type">{city.location_type}</p>

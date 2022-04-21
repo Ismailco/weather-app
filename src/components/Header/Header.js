@@ -22,7 +22,7 @@ function Header() {
           <FontAwesomeIcon className="fa-icon" icon={faHome} />
         </a>
       </div>
-      <p className="current-tab">most views</p>
+      <p className="current-tab">Global Forecast</p>
       <div className="nav">
         <input className="search-input" type="text" required onKeyPress={(e) => onKeyPress(e)} />
         <a href="/">
