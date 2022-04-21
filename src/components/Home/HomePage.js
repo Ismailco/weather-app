@@ -25,7 +25,6 @@ function HomePage() {
       )}
       {city.length > 0 && (
         <div>
-          {/* <h2>Weather in: {}</h2> */}
           <section className="city-unit">
             {city.map((city) => (
               <City city={city} weather={city.consolidated_weather} key={city.woeid} />
