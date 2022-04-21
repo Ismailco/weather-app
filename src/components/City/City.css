@@ -1,0 +1,57 @@
+.city {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 260px;
+  height: 350px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px;
+  border: 1px solid rgba(62, 62, 62, 0.1);
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffe7ee;
+}
+
+.city:nth-child(1) {
+  width: 89%;
+}
+
+.city-state {
+  margin-bottom: 80px;
+  align-self: flex-start;
+  width: 130px;
+}
+
+.city:nth-child(1) .city-state {
+  margin-bottom: 2px;
+  width: 210px;
+}
+
+.city-name {
+  font-size: 20px;
+}
+
+.city:nth-of-type(1) .city-name {
+  font-size: 30px;
+}
+
+.city:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.city-type {
+  font-size: 15px;
+}
+
+.gps-cord {
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .city {
+    width: 160px;
+  }
+}
