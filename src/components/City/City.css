@@ -1,10 +1,9 @@
 .city {
   display: flex;
-  flex-direction: column;
   flex-grow: 1;
   width: 260px;
   height: 350px;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   padding: 20px;
   border: 1px solid rgba(62, 62, 62, 0.1);
@@ -19,15 +18,51 @@
   width: 89%;
 }
 
-.city-state {
-  margin-bottom: 80px;
+.city-weather-info {
   align-self: flex-start;
-  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 30%;
+  flex-direction: column;
+}
+
+.city-state-info {
+  text-transform: lowercase;
+  width: 80%;
+  font-size: 14px;
+  color: #ffe7eeda;
+  display: flex;
+  margin-top: 20px;
+}
+
+.city-the-temp {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.city:nth-child(1) .city-the-temp {
+  font-size: 50px;
+}
+
+.sep {
+  border-left: 2px solid #ffe7ee;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.city-about-info {
+  text-align: right;
+}
+
+.city-state {
+  align-self: flex-start;
+  width: 15vw;
+  margin-right: 20px;
 }
 
 .city:nth-child(1) .city-state {
-  margin-bottom: 2px;
-  width: 210px;
+  width: 60%;
 }
 
 .city-name {
@@ -35,7 +70,7 @@
 }
 
 .city:nth-of-type(1) .city-name {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .city:nth-child(1n) {
