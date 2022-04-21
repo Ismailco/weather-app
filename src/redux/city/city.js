@@ -8,10 +8,6 @@ export const getData = (citys) => ({
   },
 });
 
-export const removeData = () => ({
-  type: REMOVE_DATA,
-});
-
 export const getCityInfo = async (id) => {
   const fetchData = await fetch(`https://www.metaweather.com/api/location/${id}`);
   const cityInfo = await fetchData.json();
@@ -38,7 +34,6 @@ export const dispatchGetData = (city) => async (dispatch) => {
         woeid: city.woeid,
         latt_long: city.latt_long,
       }));
-      // dispatch(getData(result));
       return result;
     })
     .then((res) => {
@@ -48,6 +43,10 @@ export const dispatchGetData = (city) => async (dispatch) => {
       throw new Error(e);
     });
 };
+
+export const removeData = () => ({
+  type: REMOVE_DATA,
+});
 
 const reducer = (state = [], action = {}) => {
   switch (action.type) {
