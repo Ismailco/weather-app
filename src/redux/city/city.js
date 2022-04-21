@@ -9,13 +9,13 @@ export const getData = (citys) => ({
 });
 
 export const getCityInfo = async (id) => {
-  const fetchData = await fetch(`https://www.metaweather.com/api/location/${id}`);
+  const fetchData = await fetch(`https://radiant-island-69019.herokuapp.com/https://www.metaweather.com/api/location/${id}`);
   const cityInfo = await fetchData.json();
   return cityInfo;
 };
 
 export const dispatchGetData = (city) => async (dispatch) => {
-  const apiUrl = `https://www.metaweather.com/api/location/search/?query=${city}`;
+  const apiUrl = `https://radiant-island-69019.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${city}`;
   fetch(apiUrl, {
     method: 'GET',
     headers: {
