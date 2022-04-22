@@ -10,7 +10,6 @@
 body {
   font-family: 'gill sans', 'Fira Sans', Arial, Helvetica, sans-serif;
   background-color: rgb(235, 76, 137);
-  min-height: 100vh;
 }
 
 .header {
