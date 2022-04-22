@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create the Footer component snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="footer"
+  >
+    <p
+      class="footer-content"
+    >
+      Created with
+      <span
+        class="hearts"
+      >
+        ♥
+      </span>
+      and
+      <span
+        class="coffee"
+      >
+        ☕
+      </span>
+      in Morocco,
+      <br />
+      This App under GPL-3 License.
+    </p>
+  </div>
+</DocumentFragment>
+`;
