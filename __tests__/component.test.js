@@ -175,10 +175,9 @@ const data = {
   ],
 };
 
-// I created the same actions and redeucer here instead of importing them
 // Action
 const GET_DATA = 'weatherApp/city/GET_DATA';
-export const getData = (citys) => ({
+const getData = (citys) => ({
   type: GET_DATA,
   payload: {
     citys,
@@ -196,37 +195,37 @@ store.dispatch(getData(data));
 
 describe('Countries List ', () => {
   it('renders CityPage correctly', () => {
-    const countries = renderer
+    const cityPage = renderer
       .create(
         <Provider store={store}>
           <Router>
             <Header />
           </Router>
-        </Provider>
+        </Provider>,
       )
       .toJSON();
-    expect(countries).toMatchSnapshot();
+    expect(cityPage).toMatchSnapshot();
   });
   it('renders HomePage correctly', () => {
-    const regions = renderer
+    const homePage = renderer
       .create(
         <Provider store={store}>
           <Router>
             <HomePage />
           </Router>
-        </Provider>
+        </Provider>,
       )
       .toJSON();
-    expect(regions).toMatchSnapshot();
+    expect(homePage).toMatchSnapshot();
   });
   test('renders App correctly', () => {
-    const pollutions = renderer
+    const theApp = renderer
       .create(
         <Provider store={store}>
           <App />
-        </Provider>
+        </Provider>,
       )
       .toJSON();
-    expect(pollutions).toMatchSnapshot();
+    expect(theApp).toMatchSnapshot();
   });
 });
