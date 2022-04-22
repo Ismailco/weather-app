@@ -1,59 +1,72 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Weather App
 
-> One paragraph statement about the project.
+> A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.
 
-![screenshot](./app_screenshot.png)
+![](./src/images/screencast.gif)
 
-Additional description about the project and its features.
+## Build with
 
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
+- [x] React
+- [x] Redux
+- [x] Thunk
+- [x] Redux-Logger
+- [x] Vanilla JavaScript
+- [x] CSS
+- [x] HTML
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://mv-react-weather-app.herokuapp.com/)
 
+[Video presentation](https://www.loom.com/share/0cfd3b0438ec4d9e84b1c27850e5de1b)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
+
+You need to have a browser and this tools installed:
+
+- git
+- Node
 
 ### Setup
 
-### Install
+To get a local copy up and running follow these simple example steps:
+
+```
+$ git clone git@github.com:Ismailco/weather-app.git
+
+```
+
+```
+$ cd weather-app
+```
+
+```
+$ npm i
+```
+
+```
+$ npm start
+```
 
 ### Usage
 
-### Run tests
+To build the production version:
 
-### Deployment
-
-
+```
+$ npm run build
+```
 
 ## Authors
 
-👤 **Author1**
+👤 **Ismail Courr**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ismailco](https://github.com/ismailco)
+- Twitter: [@ismailcourr](https://twitter.com/ismailcourr)
+- LinkedIn: [Ismail Courr](https://linkedin.com/in/ismailcourr)
 
 ## 🤝 Contributing
 
@@ -67,10 +80,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This project is based on the design guidelines creative commons license design. The Original design idea by [Nelson Sakwa on Behance.](https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [GPL-3.0](./LICENSE) licensed.
