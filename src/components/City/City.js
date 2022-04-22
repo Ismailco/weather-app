@@ -7,14 +7,14 @@ function City({ city, weather }) {
   return (
     <Link to={`/city/${city.woeid}/${city.title}`} className="city">
       <div className="city-weather-info">
-        <img key={city.woeid} className="city-state" src={`https://www.metaweather.com/static/img/weather/${weather[0].weather_state_abbr}.svg`} alt={city.title} />
+        <img key={city.woeid} className="city-state" src={`https://www.metaweather.com/static/img/weather/${weather.weather_state_abbr}.svg`} alt={city.title} />
         <div className="city-state-info">
           <p className="city-the-temp">
-            {Math.round(weather[0].the_temp)}
+            {Math.round(weather.the_temp)}
             &deg;
           </p>
           <p className="sep" />
-          <p>{weather[0].weather_state_name}</p>
+          <p>{weather.weather_state_name}</p>
         </div>
       </div>
       <div className="city-about-info">
@@ -41,6 +41,8 @@ City.propTypes = {
   }).isRequired,
   weather: PropTypes.shape({
     weather_state_abbr: PropTypes.string.isRequired,
+    the_temp: PropTypes.number.isRequired,
+    weather_state_name: PropTypes.string.isRequired,
   }).isRequired,
 };
 

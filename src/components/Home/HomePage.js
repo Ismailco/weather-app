@@ -27,7 +27,7 @@ function HomePage() {
         <div>
           <section className="city-unit">
             {city.map((city) => (
-              <City city={city} weather={city.consolidated_weather} key={city.woeid} />
+              <City city={city} weather={city.consolidated_weather[0]} key={city.woeid} />
             ))}
           </section>
         </div>
