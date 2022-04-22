@@ -1,8 +1,8 @@
 .city {
   display: flex;
   flex-grow: 1;
-  width: 260px;
-  height: 350px;
+  width: 20vw;
+  height: 55vh;
   justify-content: space-between;
   align-items: flex-end;
   padding: 20px;
@@ -91,6 +91,7 @@
 
 @media only screen and (max-width: 700px) {
   .city {
-    width: 160px;
+    width: 40vw;
+    height: 30vh;
   }
 }

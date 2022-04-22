@@ -20,6 +20,8 @@
 
 [Live Demo Link](https://mv-react-weather-app.herokuapp.com/)
 
+[Video presentation](https://www.loom.com/share/0cfd3b0438ec4d9e84b1c27850e5de1b)
+
 ## Getting Started
 
 ### Prerequisites
@@ -39,7 +41,7 @@ $ git clone git@github.com:Ismailco/weather-app.git
 ```
 
 ```
-$ cd space-travel
+$ cd weather-app
 ```
 
 ```
